@@ -20,9 +20,9 @@ Paste these into the repository's **About** panel (the gear icon next to "About"
 ## Creating the release
 
 1. Releases → **Draft a new release**.
-2. Tag: `v0.2`. Title: `Siritap 0.2`.
-3. Paste the contents of `RELEASE_NOTES_0.2.md` as the description.
-4. Attach `Siritap-0.2.dmg`.
+2. Tag: `v0.3`. Title: `Siritap 0.3: Button mode`.
+3. Paste the contents of `RELEASE_NOTES_0.3.md` as the description.
+4. Attach `Siritap-0.3.dmg`.
 5. Publish.
 
 ## What to upload to the repo
@@ -46,15 +46,15 @@ Upload the contents of `docs/` as the site's web root:
 ```
 index.html                  the home page
 download/index.html         forwards to the current DMG
-downloads/Siritap-0.2.dmg   the app
+downloads/Siritap-0.3.dmg   the app (keep Siritap-0.2.dmg there too)
 img/                        icon and screenshots
 ```
 
 Every download button on the page points to `/download/`, and that page forwards to the DMG. So for a new version you:
 
-1. Upload `downloads/Siritap-0.3.dmg` (keep the old one, so links people already shared still work).
-2. In `download/index.html`, change `0.2` to `0.3` in its three places.
-3. Change "Version 0.2" on the home page.
+1. Upload the new DMG to `downloads/` (keep the old ones, so links people already shared still work).
+2. In `download/index.html`, change the version number in its three places.
+3. Change the "Version …" line on the home page.
 
 Server notes:
 - Any static web server works (nginx, Apache, CloudPanel's static site). No PHP or database.

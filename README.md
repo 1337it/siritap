@@ -21,8 +21,15 @@ Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap,
 **Touch surface**
 - Move the pointer like a trackpad, with adjustable speed and acceleration.
 - Tap zones: a tap in the middle clicks, a tap on an edge presses an arrow key. Each zone can do anything you like.
-- Press harder to click, without lifting your finger. Keep pressing and slide to drag.
-- Ignores light, accidental touches.
+- Click the remote without lifting your finger, and the click lands where you aimed: the pointer is put back to where it was before the press nudged it. Keep it held and slide to drag.
+- Ignores light, accidental touches, and can hold the pointer still while you press hard.
+
+**Button mode** *(new in 0.3)*
+- The pointer settles on buttons, links, text fields, files and Dock icons, with a thin outline around the one in focus, like on Apple TV.
+- Swipe straight across or up and down to step from one to the next. A longer swipe goes further, and a hard flick keeps going.
+- Siritap reads your intent from the swipe: a diagonal movement moves the pointer instead, and so does pushing on past the last button in a window.
+- Or switch it on and off yourself by holding the click, and swipe across the whole screen, from the Dock to the menu bar.
+- Off by default. Choose Automatic or "Hold the click to switch" on the Pointer page.
 
 **Scrolling**
 - Scroll along the right edge, with momentum after a flick, like a trackpad.
@@ -47,7 +54,7 @@ Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap,
 
 **Made for each remote**
 - Every setting is kept separately for each remote, so a 1st-generation and a 2nd-generation remote can behave differently.
-- A live view shows your finger on the remote while you adjust the settings.
+- A live view of the remote stays at the top of each page and shows your finger while you adjust the settings below it.
 
 <p align="center">
   <img src="screenshots/taps.png" width="380" alt="Taps">
@@ -93,6 +100,7 @@ Set **Dictate (hold to talk)** on a button (the Siri button on the 2nd generatio
 | Price | Free | Paid | Paid | Free | Free, voice features paid |
 | Touch-surface pointer | Yes | Yes | Yes | – | Yes |
 | Tap zones and edge arrows | Yes | – | – | – | – |
+| Focus on buttons, swipe between them | Yes | – | – | – | – |
 | Momentum scrolling | Yes | – | – | – | – |
 | Ring scrolling (2nd gen) | Yes | Yes | – | – | Paid |
 | Per-app actions | Yes | Yes | Yes | A few apps | Yes |
@@ -105,7 +113,7 @@ This comparison was put together in November 2026 from each product's public pag
 
 ## Privacy
 
-Siritap makes no network connections, collects nothing and has no analytics. Speech is recognised by macOS on your Mac whenever your language supports it; otherwise macOS may send it to Apple, as it does for dictation. Details in [PRIVACY.md](PRIVACY.md).
+Siritap makes no network connections, collects nothing and has no analytics. Button mode reads the positions of buttons from other apps through macOS Accessibility, on your Mac only. Speech is recognised by macOS on your Mac whenever your language supports it; otherwise macOS may send it to Apple, as it does for dictation. Details in [PRIVACY.md](PRIVACY.md).
 
 ## Settings file
 

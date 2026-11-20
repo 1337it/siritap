@@ -10,10 +10,14 @@ Siritap runs entirely on your Mac.
 
 | Permission | Why |
 |---|---|
-| Accessibility | To move the pointer, click, scroll and press keys for the remote. |
+| Accessibility | To move the pointer, click, scroll and press keys for the remote. With Button mode on, also to find where buttons, links and fields are in the apps on screen. |
 | Microphone | Only for voice typing with the Mac's microphone. Siritap listens only while you hold the dictate button. |
 | Speech Recognition | To turn what you say into text. |
 | Background helper (optional) | Only for voice typing with the 2nd-generation remote's own microphone. See below. |
+
+## Button mode
+
+When Button mode is on, Siritap asks macOS Accessibility where the buttons, links, text fields, files and Dock icons on screen are, so the pointer can settle on them and you can swipe between them. It reads their type, position and size only: not their labels, not what you type, not page content. The list is kept in memory for a few seconds and never saved or sent anywhere. Some apps (Chrome, and apps built like it) only describe their buttons once an assistive tool asks, so Siritap asks them to. With Button mode off, none of this happens.
 
 ## Speech
 
