@@ -11,7 +11,9 @@ Siritap runs entirely on your Mac.
 | Permission | Why |
 |---|---|
 | Accessibility | To move the pointer, click, scroll and press keys for the remote. With Button mode on, also to find where buttons, links and fields are in the apps on screen. |
-| Microphone | Only for voice typing with the Mac's microphone. Siritap listens only while you hold the dictate button. |
+| Microphone | Only for voice typing and voice control with the Mac's microphone. Siritap listens only while you hold the voice button. |
+| Apple Intelligence | Optional. With voice control, wording Siritap doesn't know itself is passed to Apple's on-device language model, which runs on your Mac. |
+| Automation (System Events) | Only when you ask for dark or light mode by voice. |
 | Speech Recognition | To turn what you say into text. |
 | Background helper (optional) | Only for voice typing with the 2nd-generation remote's own microphone. See below. |
 
@@ -31,3 +33,10 @@ Using the remote's own microphone needs a small helper that runs with administra
 - It turns Bluetooth logging on only while Siritap is open and connected to it, and turns it off again afterwards. If the setting was already on before, it leaves it alone.
 - From the log it keeps only the remote's voice packets, passes them to Siritap, and keeps nothing. It writes only short status lines (such as "trace started") to `/var/log/siritap-voicehelper.log`, never audio or text.
 - Only the Siritap app, signed by its developer, can connect to it. Other apps are refused.
+
+## Voice control
+
+- What you say is recognised on your Mac and used once, to run the command. It isn't saved.
+- Commands Siritap doesn't recognise itself go to Apple's on-device model (only with Apple Intelligence turned on). It runs on your Mac.
+- "Go to apple.com" and "search for …" open the page in your browser. That page load is your browser's, like any link you click; Siritap itself still makes no connections.
+- For troubleshooting you can keep a local log of what was heard and done: `defaults write ae.leet.siritap voiceLog -bool true` (off by default). It is written to `~/Library/Logs/Siritap-voice.log` and never leaves your Mac.

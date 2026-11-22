@@ -2,7 +2,7 @@
 
 <h1 align="center">Siritap</h1>
 
-<p align="center">Use an Apple TV Siri Remote as a trackpad, scroll wheel, media remote and voice keyboard for your Mac.</p>
+<p align="center">Use an Apple TV Siri Remote as a trackpad, scroll wheel, media remote, voice keyboard and voice control for your Mac.</p>
 
 <p align="center">
   <a href="../../releases/latest"><b>Download the latest release</b></a> ·
@@ -12,7 +12,7 @@
 
 ---
 
-Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap, and the remote moves the pointer, taps, scrolls, switches desktops, controls media and types what you say. Every gesture and button can be changed, for each remote and for each app.
+Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap, and the remote moves the pointer, taps, scrolls, switches desktops, controls media, types what you say and does what you ask. Every gesture and button can be changed, for each remote and for each app.
 
 <p align="center"><img src="screenshots/general.png" width="760" alt="Siritap settings"></p>
 
@@ -23,8 +23,9 @@ Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap,
 - Tap zones: a tap in the middle clicks, a tap on an edge presses an arrow key. Each zone can do anything you like.
 - Click the remote without lifting your finger, and the click lands where you aimed: the pointer is put back to where it was before the press nudged it. Keep it held and slide to drag.
 - Ignores light, accidental touches, and can hold the pointer still while you press hard.
+- Triple tap to select *(new in 0.4)*: the mouse button stays held while you move, so you can select files or text; tap once to let go.
 
-**Button mode** *(new in 0.3)*
+**Button mode**
 - The pointer settles on buttons, links, text fields, files and Dock icons, with a thin outline around the one in focus, like on Apple TV.
 - Swipe straight across or up and down to step from one to the next. A longer swipe goes further, and a hard flick keeps going.
 - Siritap reads your intent from the swipe: a diagonal movement moves the pointer instead, and so does pushing on past the last button in a window.
@@ -51,6 +52,12 @@ Siritap is a small menu-bar app. Pair a Siri Remote with your Mac, open Siritap,
 - Uses the Mac's microphone with any remote, or the 2nd-generation remote's own microphone (see [Voice](#voice)).
 - Recognised on your Mac by Apple's speech engine, with automatic punctuation and a choice of English variants.
 - Voice commands: "press enter", "press command T", "new line", "new paragraph", "delete that", and on their own "undo", "select all", "copy", "paste", "new tab", and more. Add your own phrase for any action.
+
+**Voice control** *(new in 0.4)*
+- Hold a button and say what you want: "open safari and go to github.com", "louder", "next tab", "type buy milk", "click sign in", "scroll down three pages".
+- Acts while you speak: "louder" or "next tab" happen the moment you say them; a command with a name or text runs at the next "and…" or a short pause. Locking, quitting and closing wait for the pause.
+- Around 50 kinds of command understood instantly by Siritap itself. With Apple Intelligence on (macOS 26+), other wording goes to Apple's on-device model, and only requests that start like a command can reach it.
+- Choose **Control the Mac (hold to talk)** for any button.
 
 **Made for each remote**
 - Every setting is kept separately for each remote, so a 1st-generation and a 2nd-generation remote can behave differently.

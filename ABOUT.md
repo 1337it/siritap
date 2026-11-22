@@ -6,12 +6,12 @@ Paste these into the repository's **About** panel (the gear icon next to "About"
 
 **Description** (350 characters max):
 
-> Use an Apple TV Siri Remote as a trackpad, scroll wheel and voice keyboard for your Mac. Tap zones, momentum and ring scrolling, gestures, per-app buttons, and voice typing with on-device speech and voice commands. Free, menu bar, macOS 14+.
+> Use an Apple TV Siri Remote as a trackpad, scroll wheel, voice keyboard and voice control for your Mac. Tap zones, button mode, momentum and ring scrolling, per-app buttons, on-device voice typing, and "open safari and go to github.com" style commands that act while you speak. Free, menu bar, macOS 14+.
 
 **Website:** `https://siritap.leet.ae`
 
 **Topics:**
-`macos` `siri-remote` `apple-tv-remote` `menu-bar-app` `swiftui` `trackpad` `remote-control` `voice-typing` `dictation` `speech-recognition` `accessibility` `bluetooth`
+`macos` `siri-remote` `apple-tv-remote` `menu-bar-app` `swiftui` `trackpad` `remote-control` `voice-typing` `dictation` `voice-control` `speech-recognition` `accessibility` `bluetooth`
 
 **Tick:** Releases. Untick Packages, and Deployments if it appears.
 
